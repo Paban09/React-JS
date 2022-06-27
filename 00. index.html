@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- react cdn -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"> </script>   
+    <!-- react dom cdn -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"> </script>
+    <!-- react bible cdn -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+
+    <title>First React Website</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        Hello React
+
+    </div>
+
+    <script type="text/babel">
+
+        //making component
+        function Test(){
+            const bla=()=>{
+                alert("Don't waste time just start");
+            }
+            return <button onClick={bla}>Click Me</button>
+        }
+        class Hello extends React.Component{
+            render(){
+                // return <div>Hello Pabon, please learn how to code react </div>
+                //we can use components as html tag
+                return <div>Hello Pabon, please learn how to code react. <Test/> </div>
+            }
+        }
+
+        // <!-- to connect react with html we use dom --> 
+        //this render got two peremeter render(<Hello/>,document.getElementById='mydiv')
+        //by using this the html code will be get replaced
+        ReactDOM.render(<Hello/>,document.getElementById('mydiv'));
+    
+    </script>
+
+</body>
+
+</html>
