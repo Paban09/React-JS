@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  background-color: aqua ;
+}
+
+.App-center{
+   color: red;
+   font-size: 4rem;
+   background-color: green;
+   font-weight: bold;
+}
