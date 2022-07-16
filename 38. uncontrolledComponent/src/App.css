@@ -1,0 +1,15 @@
+.App{
+  margin: 10px;
+  padding: 20px;
+  text-align:center;
+  font-weight: bold;
+  background-color: rgb(11, 250, 238) ;
+  font-size: 1rem;
+}
+
+span{
+  padding: 10px;
+  background-color: aquamarine;
+  font-size: 15px;
+  line-height: 40px;
+}
